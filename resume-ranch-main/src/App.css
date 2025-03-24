@@ -1,0 +1,75 @@
+
+/* App.css */
+:root {
+  --primary: #4A6FDC;
+  --primary-light: #EEF2FF;
+  --secondary: #6C7293;
+  --success: #34D399;
+  --danger: #F87171;
+  --warning: #FBBF24;
+  --background: #F9FAFB;
+  --card: #FFFFFF;
+  --text: #1F2937;
+  --text-light: #6B7280;
+  --border: #E5E7EB;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ... keep existing code */
+
+/* Excel Mapping Styles */
+.step-indicator {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.step {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-right: none;
+  color: var(--text-light);
+}
+
+.step:first-child {
+  border-radius: 4px 0 0 4px;
+}
+
+.step:last-child {
+  border-right: 1px solid var(--border);
+  border-radius: 0 4px 4px 0;
+}
+
+.step.active {
+  background-color: var(--primary-light);
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.column-pill {
+  background-color: var(--primary-light);
+  color: var(--primary);
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+.sample-data {
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.required {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.not-mapped {
+  color: var(--text-light);
+  font-style: italic;
+}

@@ -1,0 +1,190 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+ 
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+ 
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+ 
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+ 
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+ 
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+ 
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+ 
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+ 
+    --radius: 0.5rem;
+
+    /* Sidebar theme */
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 222.2 84% 4.9%;
+    --sidebar-primary: 222.2 47.4% 11.2%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 210 40% 96.1%;
+    --sidebar-accent-foreground: 222.2 47.4% 11.2%;
+    --sidebar-border: 214.3 31.8% 91.4%;
+    --sidebar-ring: 222.2 84% 4.9%;
+
+    --blue-50: 217.9 100% 97.1%;
+    --blue-100: 214.3 94.6% 92.7%;
+    --blue-200: 213.3 96.9% 87.3%;
+    --blue-300: 211.7 96.4% 78.4%;
+    --blue-400: 213.1 93.9% 67.8%;
+    --blue-500: 217.2 91.2% 59.8%;
+    --blue-600: 221.2 83.2% 53.3%;
+    --blue-700: 224.3 76.3% 48%;
+    --blue-800: 225.9 70.7% 40.2%;
+    --blue-900: 224.4 64.3% 32.9%;
+
+    --green-50: 138.5 76.5% 96.7%;
+    --green-100: 140.6 84.2% 92.5%;
+    --green-200: 141 78.9% 85.1%;
+    --green-300: 141.7 76.6% 73.1%;
+    --green-400: 141.9 69.2% 58%;
+    --green-500: 142.1 70.6% 45.3%;
+    --green-600: 142.1 76.2% 36.3%;
+    --green-700: 142.4 71.8% 29.2%;
+    --green-800: 142.8 64.2% 24.1%;
+    --green-900: 143.8 61.2% 20.2%;
+
+    --amber-50: 48 100% 96.1%;
+    --amber-100: 48 96.5% 88.8%;
+    --amber-200: 48 96.6% 76.7%;
+    --amber-300: 45.9 96.7% 64.5%;
+    --amber-400: 43.3 96.4% 56.3%;
+    --amber-500: 38.3 92.6% 50.2%;
+    --amber-600: 32.1 94.6% 43.7%;
+    --amber-700: 26 90.5% 37.1%;
+    --amber-800: 22.7 82.5% 31.4%;
+    --amber-900: 21.7 77.8% 26.5%;
+
+    --indigo-50: 225.9 100% 96.7%;
+    --indigo-100: 226.5 100% 93.9%;
+    --indigo-200: 228 96.5% 88.8%;
+    --indigo-300: 229.7 93.5% 81.8%;
+    --indigo-400: 234.5 89.5% 73.9%;
+    --indigo-500: 238.7 83.5% 66.7%;
+    --indigo-600: 243.4 75.4% 58.6%;
+    --indigo-700: 244.5 57.9% 50.6%;
+    --indigo-800: 243.7 54.5% 41.4%;
+    --indigo-900: 242.2 47.4% 34.3%;
+
+    --teal-50: 166.2 76.5% 96.7%;
+    --teal-100: 167.2 85.5% 89.2%;
+    --teal-200: 168.4 83.8% 78.2%;
+    --teal-300: 170.6 76.9% 64.3%;
+    --teal-400: 172.5 66% 50.4%;
+    --teal-500: 173.4 80.4% 40%;
+    --teal-600: 174.7 83.9% 31.6%;
+    --teal-700: 175.3 77.4% 26.1%;
+    --teal-800: 176.1 69.4% 21.8%;
+    --teal-900: 175.9 60.8% 19%;
+  }
+ 
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+ 
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+ 
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+ 
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+ 
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+ 
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+ 
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+ 
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+
+    /* Sidebar dark theme */
+    --sidebar-background: 222.2 84% 4.9%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 210 40% 98%;
+    --sidebar-primary-foreground: 222.2 47.4% 11.2%;
+    --sidebar-accent: 217.2 32.6% 17.5%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217.2 32.6% 17.5%;
+    --sidebar-ring: 212.7 26.8% 83.9%;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/90 backdrop-blur-sm border border-brand-100 rounded-lg shadow-sm hover:shadow-md transition-shadow;
+  }
+  
+  .hover-lift {
+    @apply transition-all duration-300 hover:shadow-md hover:-translate-y-1;
+  }
+  
+  .subtle-shadow {
+    @apply shadow-sm;
+  }
+  
+  .premium-transition {
+    @apply transition-all duration-200 ease-in-out;
+  }
+  
+  .table-header-cell {
+    @apply px-4 py-3 text-left text-xs font-medium text-brand-700 uppercase tracking-wider;
+  }
+  
+  .table-cell {
+    @apply px-4 py-3 whitespace-nowrap text-sm text-brand-800;
+  }
+  
+  .menu-tab {
+    @apply px-4 py-2 text-sm font-medium transition-colors duration-200;
+  }
+  
+  .menu-tab-active {
+    @apply bg-white text-brand-800 shadow-sm;
+  }
+  
+  .menu-tab-inactive {
+    @apply text-brand-600 hover:text-brand-800 hover:bg-white/50;
+  }
+}
